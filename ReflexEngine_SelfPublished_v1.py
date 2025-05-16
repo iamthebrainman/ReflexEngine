@@ -4,6 +4,9 @@ from typing import List, Dict, Any
 from datetime import datetime
 import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
+from dotenv import load_dotenv
+load_dotenv()
+
 
 DEBUG_MODE = True
 
