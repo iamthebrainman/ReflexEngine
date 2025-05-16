@@ -7,7 +7,7 @@ from tkinter.scrolledtext import ScrolledText
 
 DEBUG_MODE = True
 
-FIREWORKS_API_KEY = os.getenv("FIREWORKS_API_KEY", "fw_3ZGvWP32PPjFi7qbXwx2boSD") or sys.exit("[FATAL] FIREWORKS_API_KEY not set.")
+FIREWORKS_API_KEY = os.getenv("FIREWORKS_API_KEY", "Insert_API_here") or sys.exit("[FATAL] FIREWORKS_API_KEY not set.")
 BASE = "https://api.fireworks.ai/inference/v1/chat/completions"
 HEAD = {"Authorization": f"Bearer {FIREWORKS_API_KEY}", "Content-Type": "application/json"}
 
