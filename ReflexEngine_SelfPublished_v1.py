@@ -54,7 +54,7 @@ def fibonacci_semantic_spiral(self, text: str, max_k: int = 89) -> List["Thought
     ts = now_utc()
     with self.lock:
         scored = sorted(self.nodes.values(), key=lambda n: n.spiral_score(v, ts, self.nodes), reverse=True)
-    fib = [1, 1]
+    fib = [0, 1]
     while len(fib) < max_k:
         fib.append(fib[-1] + fib[-2])
     indices = sorted(set(fib[:max_k]))
